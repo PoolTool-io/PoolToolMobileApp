@@ -1,0 +1,25 @@
+poolpubkey:a.id!=null?a.id:'', //
+ticker:"t" in a?a.t:a.ticker, //
+groupname: "g" in a?a.g:a.groupname, //
+pool_name: "n" in a?a.n:a.name, //
+rank: "r" in a?a.r:a.rank, //
+onlineRelays: "o" in a?a.o:a.onlineRelays,//
+saturation: "s" in a?a.s:a.saturation,//
+poolcost: "f" in a?a.f:a.fixedFee,//
+fpoolcost: "ff" in a?a.ff:a.afixedFee,//
+poolmargin: "m" in a?(a.m/100):(a.variableFee/100), //
+fpoolmargin: "fm" in a?(a.fm/100):(a.avariableFee/100),//
+poolpledge: "p" in a?a.p:a.pledge, //
+fpoolpledge: "fp" in a?a.fp:a.apledge,//
+poolpledgevalue: "ap" in a?a.ap:a.actualPledge, //
+itn_verified: "i" in a?a.i:a.itnVerified,//
+epoch_blocks: "b" in a?(a.b!=null?a.b:0):(a.epochBlocks!=null?a.epochBlocks:0),//
+epochBlocksEpoch: "eb" in a?(a.eb!=null?a.eb:0):(a.epochBlocksEpoch!=null?a.epochBlocksEpoch:0),//
+life_blocks: "l" in a?(a.l!=null?a.l:0):(a.totalBlocks!=null?a.totalBlocks:0),//
+genesis_pool: "x" in a?a.x:a.isGenesis,//
+pool_retired: "d" in a?a.d:a.isRetired,//
+assigned_slots: "z" in a?a.z:a.assigned_slots,//
+assigned_slots_epoch: "ez" in a?a.ez:a.assigned_slots_epoch,//
+imposter: "xx" in a?a.xx:a.imposter,//
+lifetime_per_blocks: "zl" in a?a.zl:a.lifetime_per_blocks,//
+lifetime_per_slots: "zs" in a?a.zs:a.lifetime_per_slots//

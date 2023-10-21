@@ -1,0 +1,17 @@
+# EXAMPLE USAGE
+# Refer for explanation to following link:
+# https://github.com/evilmartians/lefthook/blob/master/docs/full_guide.md
+#
+pre-push:
+  parallel: true
+  commands:
+    tests:
+      run: flutter test
+    linter:
+      run: fvm flutter analyze --no-fatal-infos
+
+pre-commit:
+  commands:
+    pretty:
+      glob: '*.dart'
+      run: fvm flutter format {staged_files} && git add {staged_files}
