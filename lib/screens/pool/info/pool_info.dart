@@ -40,7 +40,8 @@ class PoolInfo extends StatelessWidget {
                     onTap: () => {
                           showSuccessToast(
                               "${"Pool ID ${poolSummary.id!}"} is copied to clipboard"),
-                          Clipboard.setData(ClipboardData(text: poolSummary.id))
+                          Clipboard.setData(
+                              ClipboardData(text: poolSummary.id!))
                         },
                     child: const Icon(Icons.content_copy)),
                 const SizedBox(width: 8),

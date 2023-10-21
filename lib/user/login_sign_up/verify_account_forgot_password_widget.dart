@@ -214,7 +214,7 @@ class _VerifyAccountForgotPasswordWidgetState
 
   void copyPaymentAddress() {
     Clipboard.setData(
-        ClipboardData(text: verificationStatus?.paymentToAddress));
+        ClipboardData(text: verificationStatus!.paymentToAddress));
     showSuccessToast("Address is copied to clipboard");
   }
 

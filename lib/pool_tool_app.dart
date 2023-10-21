@@ -49,6 +49,9 @@ class PoolToolAppState extends State<PoolToolApp> with WidgetsBindingObserver {
       case AppLifecycleState.detached:
         debugPrint('appLifeCycleState detached');
         break;
+      case AppLifecycleState.hidden:
+        debugPrint('appLifeCycleState hidden');
+        break;
     }
   }
 
