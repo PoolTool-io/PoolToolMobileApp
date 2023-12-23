@@ -50,7 +50,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCR5macOse2vgWvZnxYYbJpUq2e29RQRic',
+    apiKey: 'AIzaSyDo3lHR0Ct925RyqeksTWXErt_EZS0E5eE',
     appId: '1:575892729285:android:097c65dc9c24e717182fac',
     messagingSenderId: '575892729285',
     projectId: 'pegasus-pool',
@@ -65,8 +65,7 @@ class DefaultFirebaseOptions {
     projectId: 'pegasus-pool',
     databaseURL: 'https://pegasus-pool.firebaseio.com',
     storageBucket: 'pegasus-pool.appspot.com',
-    iosClientId:
-        '575892729285-ogdlg29a9qecbnvvb2lbdhnevhgi5oo7.apps.googleusercontent.com',
+    iosClientId: '575892729285-ogdlg29a9qecbnvvb2lbdhnevhgi5oo7.apps.googleusercontent.com',
     iosBundleId: 'com.pegasus.tool',
   );
 }

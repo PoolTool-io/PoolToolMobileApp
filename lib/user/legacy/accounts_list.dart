@@ -2,7 +2,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:pegasus_tool/common/label_value_widget.dart';
 import 'package:pegasus_tool/user/legacy/account.dart';
-import 'package:pegasus_tool/user/login_sign_up/got_an_account_widget.dart';
 import 'package:pegasus_tool/utils.dart';
 
 import 'add_account_action_button.dart';
@@ -39,14 +38,6 @@ class AccountsListWidget extends StatelessWidget {
 
   List<Widget> getAccountWidgets(BuildContext context) {
     var accountWidgets = <Widget>[];
-
-    if (user == null) {
-      accountWidgets.add(const Text(
-          "Verify one or more of your accounts to access your personal dashboard and other premium services.",
-          textAlign: TextAlign.center));
-      accountWidgets.add(const SizedBox(height: 8));
-      accountWidgets.add(const GotAnAccountWidget());
-    }
 
     if (accounts.length > 1) {
       accountWidgets.add(accountsTotalView(context));
@@ -130,12 +121,12 @@ class AccountsListWidget extends StatelessWidget {
   }
 
   Widget watchThisSpaceCard() {
-    return Card(
+    return const Card(
       child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
         Padding(
-            padding: const EdgeInsets.only(
+            padding: EdgeInsets.only(
                 top: 8.0, bottom: 0.0, left: 8.0, right: 0.0),
-            child: Row(children: const [
+            child: Row(children: [
               Icon(
                 Icons.dashboard_customize,
                 size: 24.0,
@@ -144,8 +135,8 @@ class AccountsListWidget extends StatelessWidget {
               Expanded(
                   child: Text("Stay tuned!", style: TextStyle(fontSize: 18.0)))
             ])),
-        const Divider(),
-        const Padding(
+        Divider(),
+        Padding(
             padding: EdgeInsets.all(8),
             child: Text(
                 "A more personalised dashboard showing you detailed information about your accounts and more is currently being built so watch this space and look out for app updates! In the meantime verify your addresses and make good use of the new chat features.")),

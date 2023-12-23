@@ -223,9 +223,8 @@ class _AccountWidgetState extends State<AccountWidget> {
 
   ChartData? getLastRewards() {
     try {
-      return rewardsData.last.data.firstWhere(
-          (element) => element.epoch == widget.currentEpoch - 2,
-          orElse: null);
+      return rewardsData.last.data
+          .firstWhere((element) => element.epoch == widget.currentEpoch - 2);
     } on dynamic catch (_) {
       return null;
     }
@@ -233,9 +232,8 @@ class _AccountWidgetState extends State<AccountWidget> {
 
   ChartData? getEstimatedRewards() {
     try {
-      return rewardsData.last.data.firstWhere(
-          (element) => element.epoch == widget.currentEpoch - 1,
-          orElse: null);
+      return rewardsData.last.data
+          .firstWhere((element) => element.epoch == widget.currentEpoch - 1);
     } on dynamic catch (_) {
       return null;
     }
@@ -321,9 +319,9 @@ class _AccountWidgetState extends State<AccountWidget> {
       builder: (BuildContext context) {
         return AlertDialog(
           title: const Text('Remove Account!'),
-          content: SingleChildScrollView(
+          content: const SingleChildScrollView(
             child: ListBody(
-              children: const <Widget>[
+              children: <Widget>[
                 Text('Are you sure you want to remove this account?')
               ],
             ),
@@ -363,10 +361,9 @@ class _AccountWidgetState extends State<AccountWidget> {
 
   Widget verifyAddressWidget() {
     if (isVerified()) {
-      return Padding(
-          padding: const EdgeInsets.all(8),
-          child:
-              Row(mainAxisAlignment: MainAxisAlignment.center, children: const [
+      return const Padding(
+          padding: EdgeInsets.all(8),
+          child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
             Icon(
               Icons.check,
               color: Colors.green,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:package_info/package_info.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 import 'package:pegasus_tool/common/brought_to_you_by_widget.dart';
 import 'package:pegasus_tool/styles/theme_data.dart';
 

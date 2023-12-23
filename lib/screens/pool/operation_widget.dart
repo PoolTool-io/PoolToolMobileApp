@@ -10,8 +10,7 @@ class OperationWidget extends StatefulWidget {
   final StakePool poolSummary;
 
   const OperationWidget(
-      {Key? key, required this.poolStats, required this.poolSummary})
-      : super(key: key);
+      {super.key, required this.poolStats, required this.poolSummary});
 
   @override
   State<StatefulWidget> createState() {

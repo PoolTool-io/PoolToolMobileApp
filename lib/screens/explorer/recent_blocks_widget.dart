@@ -13,7 +13,7 @@ import 'package:pegasus_tool/screens/blocks/block_list.dart';
 import 'package:pegasus_tool/services/epoch_service.dart';
 
 class RecentBlocksWidget extends StatefulWidget {
-  const RecentBlocksWidget({Key? key}) : super(key: key);
+  const RecentBlocksWidget({super.key});
 
   @override
   State<StatefulWidget> createState() {

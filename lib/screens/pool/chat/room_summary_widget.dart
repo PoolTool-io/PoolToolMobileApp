@@ -26,13 +26,13 @@ class RoomSummaryWidget extends StatefulWidget {
   final String poolId;
 
   const RoomSummaryWidget({
-    Key? key,
+    super.key,
     required this.poolId,
     required this.roomTemplate,
     required this.roomId,
     required this.activeUserDelegation,
     this.currentUserId,
-  }) : super(key: key);
+  });
 
   @override
   State<StatefulWidget> createState() {

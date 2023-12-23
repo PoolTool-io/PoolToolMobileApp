@@ -37,9 +37,7 @@ Map<String, dynamic> _$PivotRewardsRequestToJson(
 
 class _PivotRewardsClient implements PivotRewardsClient {
   _PivotRewardsClient(
-    this._dio, {
-    this.baseUrl,
-  }) {
+    this._dio) {
     baseUrl ??= 'https://api.pooltool.io/v1/';
   }
 

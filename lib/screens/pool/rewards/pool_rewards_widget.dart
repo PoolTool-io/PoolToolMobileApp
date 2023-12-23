@@ -15,11 +15,10 @@ class PoolRewards extends StatelessWidget {
   final num currentEpoch;
 
   const PoolRewards(
-      {Key? key,
+      {super.key,
       required this.poolSummary,
       required this.poolStats,
-      required this.currentEpoch})
-      : super(key: key);
+      required this.currentEpoch});
 
   @override
   Widget build(BuildContext context) {

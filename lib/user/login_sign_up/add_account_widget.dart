@@ -7,7 +7,7 @@ import 'package:pegasus_tool/common/bezier_container.dart';
 import 'add_account_success_widget.dart';
 
 class AddAccountWidget extends StatefulWidget {
-  const AddAccountWidget({Key? key}) : super(key: key);
+  const AddAccountWidget({super.key});
 
   @override
   State<StatefulWidget> createState() {

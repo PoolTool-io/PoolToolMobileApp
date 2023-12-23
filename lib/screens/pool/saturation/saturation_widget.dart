@@ -15,12 +15,11 @@ class SaturationWidget extends StatelessWidget {
   final num currentEpoch;
 
   const SaturationWidget(
-      {Key? key,
+      {super.key,
       required this.stake,
       required this.poolSummary,
       required this.delegators,
-      required this.currentEpoch})
-      : super(key: key);
+      required this.currentEpoch});
 
   @override
   Widget build(BuildContext context) {

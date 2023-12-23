@@ -13,7 +13,7 @@ import 'package:pegasus_tool/styles/theme_data.dart';
 import 'package:provider/provider.dart';
 
 class PoolToolApp extends StatefulWidget {
-  const PoolToolApp({Key? key}) : super(key: key);
+  const PoolToolApp({super.key});
 
   @override
   PoolToolAppState createState() => PoolToolAppState();

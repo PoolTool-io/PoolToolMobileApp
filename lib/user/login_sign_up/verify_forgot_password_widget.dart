@@ -6,7 +6,9 @@ import '../../main.dart';
 import 'forgot_password_success_widget.dart';
 
 class VerifyForgotPasswordWidget extends VerifyAccountForgotPasswordWidget {
+  @override
   final String address;
+  @override
   final String password;
 
   VerifyForgotPasswordWidget(

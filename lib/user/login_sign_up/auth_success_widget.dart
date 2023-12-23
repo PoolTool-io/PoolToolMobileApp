@@ -8,8 +8,7 @@ abstract class AuthSuccessWidget extends StatefulWidget {
   final String subtitle;
 
   const AuthSuccessWidget(
-      {Key? key, required this.title, required this.subtitle})
-      : super(key: key);
+      {super.key, required this.title, required this.subtitle});
 
   @override
   State<StatefulWidget> createState() {

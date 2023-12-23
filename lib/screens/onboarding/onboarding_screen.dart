@@ -5,7 +5,7 @@ import 'package:sk_onboarding_screen/sk_onboarding_screen.dart';
 class OnboardingScreen extends StatelessWidget {
   final Function onDoneFunc;
 
-  OnboardingScreen({Key? key, required this.onDoneFunc}) : super(key: key);
+  OnboardingScreen({super.key, required this.onDoneFunc});
 
   final pages = [
     SkOnboardingModel(

@@ -16,8 +16,7 @@ class PoolRecentBlocksWidget extends StatefulWidget {
   final String poolId;
 
   const PoolRecentBlocksWidget(
-      {Key? key, required this.moreBlocksScreenTitle, required this.poolId})
-      : super(key: key);
+      {super.key, required this.moreBlocksScreenTitle, required this.poolId});
 
   @override
   State<StatefulWidget> createState() {

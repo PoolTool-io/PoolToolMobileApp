@@ -8,11 +8,10 @@ class BlockItemWidget extends StatelessWidget {
   final Animation<double> animation;
 
   const BlockItemWidget(
-      {Key? key,
+      {super.key,
       required this.animation,
       required this.block,
-      required this.showLeader})
-      : super(key: key);
+      required this.showLeader});
 
   @override
   Widget build(BuildContext context) {

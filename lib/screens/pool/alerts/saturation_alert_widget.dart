@@ -13,7 +13,7 @@ import 'package:pegasus_tool/utils.dart';
 class SaturationAlertWidget extends StatefulWidget {
   final StakePool pool;
 
-  const SaturationAlertWidget({Key? key, required this.pool}) : super(key: key);
+  const SaturationAlertWidget({super.key, required this.pool});
 
   @override
   State<StatefulWidget> createState() {

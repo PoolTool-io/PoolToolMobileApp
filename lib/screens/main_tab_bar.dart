@@ -13,7 +13,7 @@ import 'package:pegasus_tool/styles/theme_data.dart';
 import 'package:provider/provider.dart';
 
 class MainTabBar extends StatefulWidget {
-  const MainTabBar({Key? key}) : super(key: key);
+  const MainTabBar({super.key});
 
   @override
   MainTabBarState createState() => MainTabBarState();

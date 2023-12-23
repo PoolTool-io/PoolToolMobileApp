@@ -15,7 +15,7 @@ import 'package:pegasus_tool/user/login_sign_up/login_sign_up_widget.dart';
 import 'package:pegasus_tool/utils.dart';
 
 class DashboardProxyWidget extends StatefulWidget {
-  const DashboardProxyWidget({Key? key}) : super(key: key);
+  const DashboardProxyWidget({super.key});
 
   @override
   State<StatefulWidget> createState() {

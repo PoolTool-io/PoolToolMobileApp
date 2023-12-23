@@ -15,8 +15,7 @@ import 'package:pegasus_tool/utils.dart';
 class EcosystemWidget extends StatefulWidget {
   final String currentEpoch;
 
-  const EcosystemWidget({Key? key, required this.currentEpoch})
-      : super(key: key);
+  const EcosystemWidget({super.key, required this.currentEpoch});
 
   @override
   State<EcosystemWidget> createState() {
@@ -72,10 +71,10 @@ class EcosystemWidgetState extends State<EcosystemWidget> {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Padding(
-              padding: const EdgeInsets.only(
+          const Padding(
+              padding: EdgeInsets.only(
                   top: 8.0, bottom: 0.0, left: 8.0, right: 0.0),
-              child: Row(children: const [
+              child: Row(children: [
                 Icon(
                   Icons.public,
                   size: 24.0,

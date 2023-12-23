@@ -30,11 +30,10 @@ class PoolRewardsChart extends StatelessWidget {
           ).format(value);
 
   PoolRewardsChart(
-      {Key? key,
+      {super.key,
       this.poolRewards,
       required this.poolSummary,
-      required this.currentEpoch})
-      : super(key: key) {
+      required this.currentEpoch}) {
     chartData = createData();
   }
 
@@ -42,10 +41,10 @@ class PoolRewardsChart extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
-        Padding(
-            padding: const EdgeInsets.only(
+        const Padding(
+            padding: EdgeInsets.only(
                 top: 8.0, bottom: 0.0, left: 8.0, right: 0.0),
-            child: Row(children: const [
+            child: Row(children: [
               Icon(
                 Icons.person_outline,
                 size: 24.0,

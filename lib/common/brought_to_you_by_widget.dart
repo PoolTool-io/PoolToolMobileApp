@@ -5,9 +5,9 @@ import 'package:url_launcher/url_launcher.dart';
 class BroughtToYouByWidget extends StatelessWidget {
   final bool forcedDarkTheme; // For splash screen colors
   const BroughtToYouByWidget({
-    Key? key,
+    super.key,
     this.forcedDarkTheme = false,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

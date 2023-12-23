@@ -30,7 +30,7 @@ import 'saturation/saturation_widget.dart';
 class PoolDetails extends StatefulWidget {
   final String poolId;
 
-  const PoolDetails({Key? key, required this.poolId}) : super(key: key);
+  const PoolDetails({super.key, required this.poolId});
 
   @override
   PoolDetailsState createState() => PoolDetailsState();

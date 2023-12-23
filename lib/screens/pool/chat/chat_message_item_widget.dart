@@ -10,8 +10,7 @@ class ChatMessageItemWidget extends StatelessWidget {
   final String userId;
 
   const ChatMessageItemWidget(
-      {Key? key, required this.message, required this.userId})
-      : super(key: key);
+      {super.key, required this.message, required this.userId});
 
   @override
   Widget build(BuildContext context) {

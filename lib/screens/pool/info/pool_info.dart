@@ -12,8 +12,7 @@ class PoolInfo extends StatelessWidget {
   final PoolStats poolStats;
   final StakePool poolSummary;
 
-  const PoolInfo({Key? key, required this.poolStats, required this.poolSummary})
-      : super(key: key);
+  const PoolInfo({super.key, required this.poolStats, required this.poolSummary});
 
   @override
   Widget build(BuildContext context) {

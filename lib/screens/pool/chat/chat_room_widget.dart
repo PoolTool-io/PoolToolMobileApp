@@ -14,7 +14,7 @@ import 'chat_message_item_widget.dart';
 class ChatRoomWidget extends StatefulWidget {
   final String roomId;
 
-  const ChatRoomWidget({Key? key, required this.roomId}) : super(key: key);
+  const ChatRoomWidget({super.key, required this.roomId});
 
   @override
   State<StatefulWidget> createState() {

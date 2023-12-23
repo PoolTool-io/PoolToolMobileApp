@@ -72,6 +72,7 @@ class Styles {
   }
 
   static ThemeData darkTheme = ThemeData(
+    useMaterial3: false,
     appBarTheme: const AppBarTheme(backgroundColor: BACKGROUND_COLOR_DARK),
     primaryColor: BACKGROUND_COLOR_DARK,
     scaffoldBackgroundColor: BACKGROUND_COLOR_DARK,
@@ -149,6 +150,7 @@ class Styles {
   );
 
   static ThemeData lightTheme = ThemeData(
+    useMaterial3: false,
     appBarTheme: const AppBarTheme(color: APP_COLOR),
     iconTheme: const IconThemeData(color: APP_COLOR),
     dividerColor: DIVIDER_COLOR,

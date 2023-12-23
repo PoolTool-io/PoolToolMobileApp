@@ -3,7 +3,7 @@ import 'package:pegasus_tool/user/login_sign_up/add_account_widget.dart';
 import 'package:pegasus_tool/user/login_sign_up/got_an_account_widget.dart';
 
 class LoginSignUpWidget extends StatefulWidget {
-  const LoginSignUpWidget({Key? key}) : super(key: key);
+  const LoginSignUpWidget({super.key});
 
   @override
   State<StatefulWidget> createState() {

@@ -8,7 +8,7 @@ import 'package:pegasus_tool/utils.dart';
 class PledgeDetails extends StatefulWidget {
   final StakePool pool;
 
-  const PledgeDetails({Key? key, required this.pool}) : super(key: key);
+  const PledgeDetails({super.key, required this.pool});
 
   @override
   State<StatefulWidget> createState() {

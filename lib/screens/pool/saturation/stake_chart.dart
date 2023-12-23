@@ -33,11 +33,10 @@ class StakeChart extends StatelessWidget {
           ).format(value);
 
   StakeChart(
-      {Key? key,
+      {super.key,
       this.stake,
       required this.poolSummary,
-      required this.currentEpoch})
-      : super(key: key) {
+      required this.currentEpoch}) {
     chartData = createData();
   }
 

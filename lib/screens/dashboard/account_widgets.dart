@@ -12,11 +12,10 @@ class AccountWidgets extends StatelessWidget {
       GetIt.I<FirebaseAuthService>();
 
   AccountWidgets(
-      {Key? key,
+      {super.key,
       required this.verifiedAddresses,
       required this.isRewardProcessing,
-      required this.currentEpoch})
-      : super(key: key);
+      required this.currentEpoch});
 
   @override
   Widget build(BuildContext context) {

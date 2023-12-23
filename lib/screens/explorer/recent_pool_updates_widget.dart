@@ -10,7 +10,7 @@ import 'package:pegasus_tool/screens/pool/update/all_pool_update_item.dart';
 import 'package:pegasus_tool/screens/pool/update/all_pool_updates_widget.dart';
 
 class RecentPoolUpdatesWidget extends StatefulWidget {
-  const RecentPoolUpdatesWidget({Key? key}) : super(key: key);
+  const RecentPoolUpdatesWidget({super.key});
 
   @override
   State<StatefulWidget> createState() {
@@ -72,10 +72,10 @@ class _RecentPoolUpdatesWidgetState extends State<RecentPoolUpdatesWidget> {
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-            Padding(
-                padding: const EdgeInsets.only(
+            const Padding(
+                padding: EdgeInsets.only(
                     top: 8.0, bottom: 0.0, left: 8.0, right: 0.0),
-                child: Row(children: const [
+                child: Row(children: [
                   Icon(
                     Icons.update,
                     size: 24.0,

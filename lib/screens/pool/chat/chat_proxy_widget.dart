@@ -21,8 +21,7 @@ class ChatProxyWidget extends StatefulWidget {
   final StakePool poolSummary;
 
   const ChatProxyWidget(
-      {Key? key, required this.poolStats, required this.poolSummary})
-      : super(key: key);
+      {super.key, required this.poolStats, required this.poolSummary});
 
   @override
   State<StatefulWidget> createState() {
@@ -150,9 +149,9 @@ class _ChatProxyWidgetState extends State<ChatProxyWidget> {
   }
 
   Row chatRoomsTitle() {
-    return Row(
+    return const Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: const [
+        children: [
           Text("----------------"),
           Text("Chat Rooms"),
           Text("----------------"),

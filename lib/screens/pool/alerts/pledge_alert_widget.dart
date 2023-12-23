@@ -12,7 +12,7 @@ import 'package:pegasus_tool/utils.dart';
 class PledgeAlertWidget extends StatefulWidget {
   final StakePool pool;
 
-  const PledgeAlertWidget({Key? key, required this.pool}) : super(key: key);
+  const PledgeAlertWidget({super.key, required this.pool});
 
   @override
   PledgeAlertWidgetState createState() => PledgeAlertWidgetState();

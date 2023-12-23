@@ -4,7 +4,7 @@ import 'package:pegasus_tool/styles/theme_data.dart';
 class RetiringPoolWidget extends StatelessWidget {
   final num? retiredEpoch;
 
-  const RetiringPoolWidget({Key? key, this.retiredEpoch}) : super(key: key);
+  const RetiringPoolWidget({super.key, this.retiredEpoch});
 
   @override
   Widget build(BuildContext context) {
@@ -13,10 +13,10 @@ class RetiringPoolWidget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-          Padding(
-              padding: const EdgeInsets.only(
+          const Padding(
+              padding: EdgeInsets.only(
                   top: 8.0, bottom: 0.0, left: 8.0, right: 0.0),
-              child: Row(children: const [
+              child: Row(children: [
                 Icon(
                   Icons.warning,
                   color: Styles.DANGER_COLOR,

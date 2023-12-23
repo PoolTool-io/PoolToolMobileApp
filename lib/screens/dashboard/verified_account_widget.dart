@@ -28,13 +28,12 @@ class VerifiedAccountWidget extends StatefulWidget {
   final bool isRewardProcessing;
 
   const VerifiedAccountWidget(
-      {Key? key,
+      {super.key,
       required this.isRewardProcessing,
       required this.user,
       required this.stakeKeyHash,
       required this.nickname,
-      required this.currentEpoch})
-      : super(key: key);
+      required this.currentEpoch});
 
   @override
   State<StatefulWidget> createState() {

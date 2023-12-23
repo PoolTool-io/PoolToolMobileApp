@@ -1,9 +1,8 @@
 import 'dart:async';
-import 'dart:io';
 
-import 'package:app_review/app_review.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
+import 'package:in_app_review/in_app_review.dart';
 import 'package:pegasus_tool/drawer/about.dart';
 import 'package:pegasus_tool/drawer/drawer_item.dart';
 import 'package:pegasus_tool/provider/theme_provider.dart';
@@ -15,9 +14,9 @@ class DrawerWidget extends StatefulWidget {
   final ThemeProvider themeProvider;
 
   const DrawerWidget({
-    Key? key,
+    super.key,
     required this.themeProvider,
-  }) : super(key: key);
+  });
 
   @override
   DrawerWidgetState createState() => DrawerWidgetState();
@@ -48,11 +47,10 @@ class DrawerWidgetState extends State<DrawerWidget> {
     isLoggedInStreamSubscription?.cancel();
   }
 
-  requestReview() {
-    if (Platform.isIOS) {
-      AppReview.openIosReview(appId: "1495556387", compose: true);
-    } else {
-      AppReview.openGooglePlay();
+  requestReview() async {
+    final InAppReview inAppReview = InAppReview.instance;
+    if (await inAppReview.isAvailable()) {
+      inAppReview.requestReview();
     }
   }
 

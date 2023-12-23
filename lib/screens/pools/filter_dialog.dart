@@ -3,7 +3,7 @@ import 'package:pegasus_tool/styles/theme_data.dart';
 
 class FilterDialog extends StatefulWidget {
   const FilterDialog(
-      {Key? key,
+      {super.key,
       this.hideSaturated,
       this.hideExpensive,
       this.hideUnknown,
@@ -13,8 +13,7 @@ class FilterDialog extends StatefulWidget {
       this.hidePoolGroups,
       required this.onFilterChanged,
       this.hideRetiring,
-      this.hideRetired})
-      : super(key: key);
+      this.hideRetired});
 
   final void Function(
       bool? hideUnknown,
@@ -77,10 +76,10 @@ class FilterDialogState extends State<FilterDialog> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
-                  Row(
+                  const Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
-                      children: const [
+                      children: [
                         Icon(
                           Icons.filter_list,
                           size: 24.0,

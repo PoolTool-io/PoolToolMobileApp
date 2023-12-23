@@ -7,9 +7,8 @@ import '../../utils.dart';
 import 'login_forgot_password_widget.dart';
 
 class LoginWidget extends LoginForgotPasswordWidget {
-  LoginWidget({Key? key})
+  LoginWidget({super.key})
       : super(
-          key: key,
           submitButtonTitle: "Login",
           onSubmitClickedAction: (context, address, password, setLoadingFunc) =>
               login(context, address, password, setLoadingFunc),

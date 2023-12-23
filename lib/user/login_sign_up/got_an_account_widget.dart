@@ -4,7 +4,7 @@ import 'package:pegasus_tool/styles/button_styles.dart';
 import 'login_widget.dart';
 
 class GotAnAccountWidget extends StatelessWidget {
-  const GotAnAccountWidget({Key? key}) : super(key: key);
+  const GotAnAccountWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

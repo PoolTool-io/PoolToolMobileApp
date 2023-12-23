@@ -14,10 +14,10 @@ class PreviewDelegatorsWidget extends StatelessWidget {
   final LiveDelegators? liveDelegators;
 
   PreviewDelegatorsWidget({
-    Key? key,
+    super.key,
     required this.liveDelegators,
     required this.poolSummary,
-  }) : super(key: key) {
+  }) {
     if (liveDelegators != null) {
       _list = ListModel<dynamic>(
         listKey: _listKey,
@@ -139,8 +139,7 @@ class DelegatorItemWidget extends StatelessWidget {
   final Animation<double> animation;
 
   const DelegatorItemWidget(
-      {Key? key, required this.animation, required this.delegator})
-      : super(key: key);
+      {super.key, required this.animation, required this.delegator});
 
   @override
   Widget build(BuildContext context) {

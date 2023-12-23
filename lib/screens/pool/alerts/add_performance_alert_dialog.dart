@@ -9,8 +9,7 @@ import 'package:pegasus_tool/utils.dart';
 class AddPerformanceAlertDialog extends StatefulWidget {
   final String poolId;
 
-  const AddPerformanceAlertDialog({Key? key, required this.poolId})
-      : super(key: key);
+  const AddPerformanceAlertDialog({super.key, required this.poolId});
 
   @override
   AddPerformanceAlertDialogState createState() =>
@@ -34,10 +33,10 @@ class AddPerformanceAlertDialogState extends State<AddPerformanceAlertDialog> {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
-          Row(
+          const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
-              children: const [
+              children: [
                 Icon(Icons.add_alert, size: 24),
                 SizedBox(width: 8),
                 Text(

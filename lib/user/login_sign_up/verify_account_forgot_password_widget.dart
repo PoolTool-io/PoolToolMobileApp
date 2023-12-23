@@ -30,7 +30,7 @@ abstract class VerifyAccountForgotPasswordWidget extends StatefulWidget {
   final Function buildSuccessWidget;
 
   const VerifyAccountForgotPasswordWidget(
-      {Key? key,
+      {super.key,
       required this.address,
       this.password,
       required this.loadingContent,
@@ -39,8 +39,7 @@ abstract class VerifyAccountForgotPasswordWidget extends StatefulWidget {
       required this.contactUsTitle,
       required this.getInitialVerificationStatusFunc,
       required this.pollVerificationStatusFunc,
-      required this.buildSuccessWidget})
-      : super(key: key);
+      required this.buildSuccessWidget});
 
   @override
   State<StatefulWidget> createState() {
@@ -308,12 +307,8 @@ class _VerifyAccountForgotPasswordWidgetState
       LoginResponse loginResponse = await authClient.login(loginRequest);
       UserCredential userCredential = await firebaseAuthService.firebaseAuth
           .signInWithCustomToken(loginResponse.token);
-      if (userCredential != null) {
-        await setGcmTokenAndNavigateToSuccess(userCredential.user!.uid);
-      } else {
-        pollVerificationStatus(0);
-      }
-    } on dynamic catch (_) {
+      await setGcmTokenAndNavigateToSuccess(userCredential.user!.uid);
+        } on dynamic catch (_) {
       pollVerificationStatus(0);
     }
   }

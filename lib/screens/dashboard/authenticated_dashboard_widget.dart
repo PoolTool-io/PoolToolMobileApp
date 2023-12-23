@@ -13,7 +13,7 @@ import 'package:pegasus_tool/services/firebase_auth_service.dart';
 import 'package:pegasus_tool/user/login_sign_up/add_account_widget.dart';
 
 class AuthenticatedDashboardWidget extends StatefulWidget {
-  const AuthenticatedDashboardWidget({Key? key}) : super(key: key);
+  const AuthenticatedDashboardWidget({super.key});
 
   @override
   State<StatefulWidget> createState() {

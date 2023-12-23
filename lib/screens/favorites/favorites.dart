@@ -16,7 +16,7 @@ import 'package:pegasus_tool/styles/theme_data.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class FavoritesWidget extends StatefulWidget {
-  const FavoritesWidget({Key? key}) : super(key: key);
+  const FavoritesWidget({super.key});
 
   @override
   State<StatefulWidget> createState() {

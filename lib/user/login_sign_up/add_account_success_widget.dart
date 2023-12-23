@@ -10,8 +10,7 @@ class AddAccountSuccessWidget extends StatefulWidget {
   final bool showAccountAddedSuccess;
 
   const AddAccountSuccessWidget(
-      {Key? key, required this.address, required this.showAccountAddedSuccess})
-      : super(key: key);
+      {super.key, required this.address, required this.showAccountAddedSuccess});
 
   @override
   State<StatefulWidget> createState() {

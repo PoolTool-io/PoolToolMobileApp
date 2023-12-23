@@ -27,13 +27,12 @@ class BlockProductionChart extends StatefulWidget {
   final List<Stake?> stake;
 
   const BlockProductionChart(
-      {Key? key,
+      {super.key,
       required this.blockProduction,
       required this.currentEpoch,
       required this.poolSummary,
       required this.ecosystem,
-      required this.stake})
-      : super(key: key);
+      required this.stake});
 
   @override
   BlockProductionChartState createState() => BlockProductionChartState();

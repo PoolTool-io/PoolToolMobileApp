@@ -16,7 +16,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'filter_dialog.dart';
 
 class PoolsWidget extends StatefulWidget {
-  const PoolsWidget({Key? key}) : super(key: key);
+  const PoolsWidget({super.key});
 
   @override
   State<StatefulWidget> createState() {
@@ -389,17 +389,18 @@ class PoolsWidgetState extends State<PoolsWidget> {
   }
 
   setupPoolsState(pools) {
-    List<StakePool> temp = [];
-
-    pools?.forEach((pool) {
-      bool retired =
-          pool.retiredEpoch != null && pool.retiredEpoch! <= currentEpoch!;
-      if (!retired && pool.x == false) {
-        temp.add(pool);
-      }
-    });
-
-    allPools = temp;
+    // List<StakePool> temp = [];
+    //
+    // pools?.forEach((pool) {
+    //   bool retired =
+    //       pool.retiredEpoch != null && pool.retiredEpoch! <= currentEpoch!;
+    //   if (!retired && pool.x == false) {
+    //     temp.add(pool);
+    //   }
+    // });
+    //
+    // allPools = temp;
+    allPools = pools;
 
     filterAndSortPools();
 

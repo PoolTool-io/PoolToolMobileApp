@@ -15,7 +15,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'all_pool_update_item.dart';
 
 class AllPoolUpdatesWidget extends StatefulWidget {
-  const AllPoolUpdatesWidget({Key? key}) : super(key: key);
+  const AllPoolUpdatesWidget({super.key});
 
   @override
   State<StatefulWidget> createState() {

@@ -21,10 +21,10 @@ class RelayInfo extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Padding(
-                  padding: const EdgeInsets.only(
+              const Padding(
+                  padding: EdgeInsets.only(
                       top: 8.0, bottom: 0.0, left: 8.0, right: 0.0),
-                  child: Row(children: const [
+                  child: Row(children: [
                     Icon(
                       Icons.settings_ethernet,
                       size: 24.0,

@@ -8,8 +8,7 @@ class AllDelegatorsWidget extends StatelessWidget {
   final StakePool poolSummary;
 
   const AllDelegatorsWidget(
-      {Key? key, required this.sortedDelegators, required this.poolSummary})
-      : super(key: key);
+      {super.key, required this.sortedDelegators, required this.poolSummary});
 
   @override
   Widget build(BuildContext context) {
@@ -75,8 +74,7 @@ class AllDelegatorsWidget extends StatelessWidget {
 class _DelegatorItemWidget extends StatelessWidget {
   final Delegator delegator;
 
-  const _DelegatorItemWidget({Key? key, required this.delegator})
-      : super(key: key);
+  const _DelegatorItemWidget({required this.delegator});
 
   @override
   Widget build(BuildContext context) {

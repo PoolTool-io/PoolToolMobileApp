@@ -4,9 +4,8 @@ import 'login_forgot_password_widget.dart';
 import 'verify_forgot_password_widget.dart';
 
 class ForgotPasswordWidget extends LoginForgotPasswordWidget {
-  const ForgotPasswordWidget({Key? key})
+  const ForgotPasswordWidget({super.key})
       : super(
-            key: key,
             submitButtonTitle: "Continue",
             onSubmitClickedAction: navigateToVerifyForgotPasswordWidget,
             titlePartOne: "Forgot",

@@ -8,8 +8,7 @@ class PoolItemWidget extends StatelessWidget {
   final StakePool pool;
   final num? currentEpoch;
 
-  const PoolItemWidget({Key? key, required this.pool, this.currentEpoch})
-      : super(key: key);
+  const PoolItemWidget({super.key, required this.pool, this.currentEpoch});
 
   @override
   Widget build(BuildContext context) {

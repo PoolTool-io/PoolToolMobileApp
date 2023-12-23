@@ -4,7 +4,7 @@ import 'common/color_loader.dart';
 import 'styles/theme_data.dart';
 
 class LoadingWidget extends StatelessWidget {
-  const LoadingWidget({Key? key}) : super(key: key);
+  const LoadingWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

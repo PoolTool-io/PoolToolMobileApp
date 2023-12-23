@@ -4,7 +4,7 @@ import 'package:pegasus_tool/styles/theme_data.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ForkerWidget extends StatelessWidget {
-  const ForkerWidget({Key? key}) : super(key: key);
+  const ForkerWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,10 +13,10 @@ class ForkerWidget extends StatelessWidget {
           top: 16.0, bottom: 0.0, left: 12.0, right: 12.0),
       child: Card(
           child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
-        Padding(
-            padding: const EdgeInsets.only(
+        const Padding(
+            padding: EdgeInsets.only(
                 top: 8.0, bottom: 0.0, left: 8.0, right: 0.0),
-            child: Row(children: const [
+            child: Row(children: [
               Icon(
                 Icons.warning,
                 color: Styles.DANGER_COLOR,

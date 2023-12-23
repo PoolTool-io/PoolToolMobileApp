@@ -17,14 +17,13 @@ abstract class LoginForgotPasswordWidget extends StatefulWidget {
   final bool showForgotPasswordOption;
 
   const LoginForgotPasswordWidget(
-      {Key? key,
+      {super.key,
       required this.submitButtonTitle,
       required this.onSubmitClickedAction,
       required this.titlePartOne,
       required this.titlePartTwo,
       this.explanationText,
-      required this.showForgotPasswordOption})
-      : super(key: key);
+      required this.showForgotPasswordOption});
 
   @override
   State<StatefulWidget> createState() {
@@ -157,12 +156,6 @@ class _LoginForgotPasswordWidgetState extends State<LoginForgotPasswordWidget> {
                             autocorrect: false,
                             autofocus: false,
                             enableInteractiveSelection: true,
-                            toolbarOptions: const ToolbarOptions(
-                              paste: true,
-                              cut: true,
-                              copy: true,
-                              selectAll: true,
-                            ),
                             inputFormatters: [
                               FilteringTextInputFormatter(RegExp("[A-Za-z0-9]"),
                                   allow: true),

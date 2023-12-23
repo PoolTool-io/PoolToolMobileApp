@@ -48,11 +48,11 @@ class StakePoolsRepository {
     final stakePoolsQuery = firebaseDatabaseService.firebaseDatabase
         .ref()
         .child('${Environment.getEnvironment()}/stake_pools')
-        .orderByChild("x")
-        .equalTo(false);
+        .orderByChild("r");
 
     stakePoolsQuery.onChildAdded.forEach((event) {
       StakePool stakePool = StakePool.fromMap(event.snapshot.value as Map);
+
       list.add(stakePool);
       hiveService.stakePools.put(stakePool.id, stakePool);
 

@@ -3,7 +3,7 @@ import 'package:pegasus_tool/config/constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class LandscapeHintDialog extends StatefulWidget {
-  const LandscapeHintDialog({Key? key}) : super(key: key);
+  const LandscapeHintDialog({super.key});
 
   @override
   LandscapeHintDialogState createState() => LandscapeHintDialogState();

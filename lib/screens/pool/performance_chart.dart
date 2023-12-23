@@ -223,9 +223,9 @@ class PerformanceChartState extends State<PerformanceChart> {
         return AlertDialog(
           backgroundColor: Theme.of(context).colorScheme.background,
           title: const Text('Delete Alert!'),
-          content: SingleChildScrollView(
+          content: const SingleChildScrollView(
             child: ListBody(
-              children: const <Widget>[
+              children: <Widget>[
                 Text('Are you sure you want to delete this alert?')
               ],
             ),

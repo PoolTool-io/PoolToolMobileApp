@@ -9,7 +9,7 @@ import 'package:pegasus_tool/utils.dart';
 class AddRoiAlertDialog extends StatefulWidget {
   final String poolId;
 
-  const AddRoiAlertDialog({Key? key, required this.poolId}) : super(key: key);
+  const AddRoiAlertDialog({super.key, required this.poolId});
 
   @override
   AddRoiAlertDialogState createState() => AddRoiAlertDialogState();
@@ -33,10 +33,10 @@ class AddRoiAlertDialogState extends State<AddRoiAlertDialog> {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
-          Row(
+          const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
-              children: const [
+              children: [
                 Icon(
                   Icons.add_alert,
                   size: 24,

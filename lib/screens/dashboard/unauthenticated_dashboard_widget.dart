@@ -6,8 +6,7 @@ class UnauthenticatedDashboardWidget extends StatefulWidget {
   final Function onAllAccountsRemoved;
 
   const UnauthenticatedDashboardWidget(
-      {Key? key, required this.onAllAccountsRemoved})
-      : super(key: key);
+      {super.key, required this.onAllAccountsRemoved});
 
   @override
   State<StatefulWidget> createState() {

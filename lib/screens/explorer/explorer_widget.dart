@@ -22,7 +22,7 @@ import 'package:pegasus_tool/styles/theme_data.dart';
 import 'package:pegasus_tool/utils.dart';
 
 class ExplorerWidget extends StatefulWidget {
-  const ExplorerWidget({Key? key}) : super(key: key);
+  const ExplorerWidget({super.key});
 
   @override
   State<StatefulWidget> createState() {

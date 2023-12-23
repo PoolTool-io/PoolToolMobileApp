@@ -14,12 +14,11 @@ class BlockProductionWidget extends StatefulWidget {
   final Ecosystem ecosystem;
 
   const BlockProductionWidget(
-      {Key? key,
+      {super.key,
       required this.pool,
       required this.poolStats,
       required this.currentEpoch,
-      required this.ecosystem})
-      : super(key: key);
+      required this.ecosystem});
 
   @override
   State<StatefulWidget> createState() {

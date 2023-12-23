@@ -14,7 +14,7 @@ import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class HomeSplashScreen extends StatefulWidget {
-  const HomeSplashScreen({Key? key}) : super(key: key);
+  const HomeSplashScreen({super.key});
 
   @override
   HomeSplashScreenState createState() => HomeSplashScreenState();

@@ -200,7 +200,7 @@ class StakePool {
   StakePool copyWith({
     num? ap,
     num? b,
-    dynamic? c,
+    dynamic c,
     bool? d,
     num? eb,
     num? f,

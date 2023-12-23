@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class BlockListHeader extends StatelessWidget {
   final bool showLeader;
-  const BlockListHeader({Key? key, required this.showLeader}) : super(key: key);
+  const BlockListHeader({super.key, required this.showLeader});
 
   @override
   Widget build(BuildContext context) {

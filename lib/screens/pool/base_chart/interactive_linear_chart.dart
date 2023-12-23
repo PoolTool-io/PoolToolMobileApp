@@ -58,7 +58,7 @@ List<charts.TickSpec<String>> staticTicks(num currentEpoch) {
 List<charts.TickSpec<String>> prettyTicks(num currentEpoch, num listSize) {
   var items = <charts.TickSpec<String>>[];
   num i = 0;
-  var steps;
+  int steps;
   if (listSize > 100) {
     steps = 20;
   } else if (listSize > 45) {
@@ -94,7 +94,7 @@ List<charts.TickSpec<String>> prettyTicks(num currentEpoch, num listSize) {
 List<charts.TickSpec<num>> prettyTicksNum(num currentEpoch, num listSize) {
   var items = <charts.TickSpec<num>>[];
   num i = 0;
-  var steps;
+  int steps;
   if (listSize > 100) {
     steps = 20;
   } else if (listSize > 45) {

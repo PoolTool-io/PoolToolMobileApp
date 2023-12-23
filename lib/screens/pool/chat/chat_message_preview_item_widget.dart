@@ -12,11 +12,10 @@ class ChatMessagePreviewItemWidget extends StatelessWidget {
   final bool isMessageBoardItem;
 
   const ChatMessagePreviewItemWidget(
-      {Key? key,
+      {super.key,
       required this.message,
       this.userId,
-      required this.isMessageBoardItem})
-      : super(key: key);
+      required this.isMessageBoardItem});
 
   @override
   Widget build(BuildContext context) {

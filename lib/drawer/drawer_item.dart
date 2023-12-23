@@ -8,13 +8,12 @@ class DrawerItem extends StatelessWidget {
   final Widget? trailing;
 
   const DrawerItem(
-      {Key? key,
+      {super.key,
       required this.label,
       required this.icon,
       this.target,
       this.action,
-      this.trailing})
-      : super(key: key);
+      this.trailing});
 
   @override
   Widget build(BuildContext context) {

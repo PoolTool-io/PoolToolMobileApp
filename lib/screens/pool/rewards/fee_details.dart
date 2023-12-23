@@ -8,7 +8,7 @@ import '../alerts/fee_change_alert_widget.dart';
 class FeeDetails extends StatefulWidget {
   final StakePool pool;
 
-  const FeeDetails({Key? key, required this.pool}) : super(key: key);
+  const FeeDetails({super.key, required this.pool});
 
   @override
   State<StatefulWidget> createState() {

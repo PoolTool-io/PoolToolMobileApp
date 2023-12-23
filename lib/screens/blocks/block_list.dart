@@ -18,11 +18,10 @@ class BlockList extends StatefulWidget {
   final String? poolId;
 
   const BlockList(
-      {Key? key,
+      {super.key,
       required this.screenTitle,
       required this.showLeader,
-      this.poolId})
-      : super(key: key);
+      this.poolId});
 
   @override
   BlockListState createState() => BlockListState();

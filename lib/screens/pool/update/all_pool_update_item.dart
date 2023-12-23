@@ -13,12 +13,11 @@ class AllPoolUpdateItem extends StatelessWidget {
   final Animation<double>? animation;
 
   const AllPoolUpdateItem(
-      {Key? key,
+      {super.key,
       this.animation,
       required this.update,
       required this.updateIndex,
-      required this.lastIndex})
-      : super(key: key);
+      required this.lastIndex});
 
   @override
   Widget build(BuildContext context) {

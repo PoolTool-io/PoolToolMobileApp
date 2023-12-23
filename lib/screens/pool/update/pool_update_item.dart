@@ -9,11 +9,10 @@ class PoolUpdateItem extends StatelessWidget {
   Animation<double> animation;
 
   PoolUpdateItem(
-      {Key? key,
+      {super.key,
       required this.animation,
       this.update,
-      required this.updateIndex})
-      : super(key: key);
+      required this.updateIndex});
 
   @override
   Widget build(BuildContext context) {
@@ -103,7 +102,7 @@ class PoolUpdateItem extends StatelessWidget {
   }
 
   IconStyle getIconStyle() {
-    var iconData;
+    IconData iconData;
     if (update['type'] == "registration") {
       iconData = Icons.accessibility_new;
     } else if (update['type'] == "pledge") {

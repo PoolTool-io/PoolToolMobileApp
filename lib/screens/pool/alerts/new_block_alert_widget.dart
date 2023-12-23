@@ -12,7 +12,7 @@ import 'package:pegasus_tool/utils.dart';
 class NewBlockAlertWidget extends StatefulWidget {
   final StakePool pool;
 
-  const NewBlockAlertWidget({Key? key, required this.pool}) : super(key: key);
+  const NewBlockAlertWidget({super.key, required this.pool});
 
   @override
   State<StatefulWidget> createState() {
