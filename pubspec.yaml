@@ -21,40 +21,39 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  app_review: ^2.1.2+1
   auto_size_text: ^3.0.0
   charts_flutter: ^0.12.0
-  dio: ^5.3.3
+  dio: ^5.4.0
   expandable: ^5.0.1
   fancy_bottom_navigation:
     git:
       url: https://github.com/Kingpin-Apps/fancy_bottom_navigation.git
-  firebase_analytics: ^10.6.1
-  firebase_auth: ^4.11.1
-  firebase_core: ^2.19.0
-  firebase_crashlytics: ^3.4.1
-  firebase_database: ^10.3.1
-  firebase_messaging: ^14.7.1
+  firebase_analytics: ^10.7.4
+  firebase_auth: ^4.15.3
+  firebase_core: ^2.24.2
+  firebase_crashlytics: ^3.4.8
+  firebase_database: ^10.3.8
+  firebase_messaging: ^14.7.9
   flutter_html: ^3.0.0-beta.2
   flutter_launcher_icons: ^0.13.1
   flutter_linkify: ^6.0.0
-  flutter_local_notifications: ^16.1.0
+  flutter_local_notifications: ^16.2.0
   flutter_spinkit: ^5.2.0
-  fluttertoast: ^8.2.2
+  fluttertoast: ^8.2.4
   get_it: ^7.6.4
-  google_fonts: ^4.0.3
-  http: ^0.13.5
+  google_fonts: ^6.1.0
+  http: ^1.1.2
   intl: ^0.17.0
   json_annotation: ^4.8.1
   launch_review: ^3.0.1
   logger: ^2.0.2+1
   number_display: ^3.0.0
-  package_info: ^2.0.2
+  package_info_plus: ^5.0.1
   path:
   percent_indicator: ^4.2.3
   pretty_dio_logger: ^1.3.1
   provider:
-  qr_mobile_vision: ^4.1.3
+  qr_mobile_vision: ^4.1.4
   retrofit: ^4.0.3
   shared_preferences: ^2.2.2
   sk_onboarding_screen:
@@ -63,10 +62,11 @@ dependencies:
   sqflite:
   timeago: ^3.3.0
   timeline_tile: ^2.0.0
-  url_launcher: ^6.1.14
+  url_launcher: ^6.2.2
   uuid: ^4.1.0
   hive: ^2.2.3
   hive_flutter: ^1.1.0
+  in_app_review: ^2.0.8
 
 flutter_icons:
   image_path: "assets/web_hi_res_512.png"
@@ -138,7 +138,14 @@ flutter:
 scripts:
   build_runner: fvm flutter pub run build_runner build --delete-conflicting-outputs
   clean: fvm flutter clean
+  doctor: fvm flutter doctor -v
+  pub_get: fvm flutter pub get
+  pub_outdated: fvm flutter pub outdated
   pod_install: cd ios && pod install
+  pod_install_update: cd ios && pod install --repo-update
+  pod_clean: cd ios && rm Podfile.lock && rm -rf Pods/
+  pod_update: cd ios && pod update
+  pod_repo_update: cd ios && pod repo update
   build: flutter pub run build_runner build --verbose --delete-conflicting-outputs
   build_ios_dev: flutter build ios --dart-define=POOL_TOOL_ENVIRONMENT=dev --release --no-codesign
   build_ios: flutter build ios --release --no-codesign

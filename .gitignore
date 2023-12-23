@@ -507,3 +507,4 @@ android/key/key.properties
 ios/Runner/AuthKey_A7DJ9HHFTS.p8
 ios/Runner/distribution (5).cer
 ios/Runner/GoogleService-Info.plist
+/lib/firebase_options.dart
